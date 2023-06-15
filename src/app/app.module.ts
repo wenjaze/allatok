@@ -7,6 +7,7 @@ import { CatsComponent } from './components/routes/cats/cats.component';
 import { DogsComponent } from './components/routes/dogs/dogs.component';
 import { MiceComponent } from './components/routes/mice/mice.component';
 import { NavComponent } from './components/nav/nav.component';
+import { MenuItemComponent } from './components/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavComponent } from './components/nav/nav.component';
     CatsComponent,
     DogsComponent,
     MiceComponent,
-    NavComponent
+    NavComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,

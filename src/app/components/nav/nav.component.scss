@@ -7,13 +7,11 @@
 	flex-direction: column;
 }
 
-ul {
-
+.menu-container {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	gap: 20px;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
