@@ -1,0 +1,13 @@
+.menu-item-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+    gap: 10px;
+}
+
+.menu-item-container:hover {
+	i,
+	.menu-item-text {
+		color: white;
+	}
+}

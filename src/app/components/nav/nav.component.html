@@ -1,7 +1,5 @@
 <nav class="navigation-bar">
-  <div class="menu-container">
-    <li>Kutyák</li>
-    <li>Macskák</li>
-    <li>Egerek</li>
-  </div>
+	<div class="menu">
+    <app-menu-item *ngFor="let item of menuList" [text]="item.text" [icon]="item.icon"></app-menu-item>
+	</div>
 </nav>
