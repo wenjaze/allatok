@@ -7,18 +7,21 @@ import { MenuItem } from 'src/app/interfaces/menu-item';
 	styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent {
-	menuList:MenuItem[] = [
+	menuItemList:MenuItem[] = [
 		{
 			text: "Kutyák",
-			icon: "fas fa-dog"
+			icon: "fas fa-dog",
+			route: "/dogs",
 		},
 		{
 			text: "Macskák",
-			icon: "fas fa-cat"
+			icon: "fas fa-cat",
+			route: "/cats"
 		},
 		{
 			text: "Egerek",
-			icon: "fas fa-mouse"
+			icon: "fas fa-mouse",
+			route: "/mice",
 		},
 	]
 }

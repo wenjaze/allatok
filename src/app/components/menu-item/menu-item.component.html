@@ -1,4 +1,4 @@
-<div class="menu-item-container">
-	<i [ngClass]="icon"></i>
-	<div class="menu-item-text">{{ text | uppercase }}</div>
+<div class="menu-item-container" [routerLink]="menuItemData.route">
+	<div class="menu-item-text">{{ menuItemData.text | uppercase }}</div>
+	<i [ngClass]="menuItemData.icon"></i>
 </div>
