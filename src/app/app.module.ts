@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { AnimalComponent } from './components/animal/animal.component';
+import { StoreModule } from '@ngrx/store';
+import { visitMiceReducer } from './state/visited-pages.state';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { AnimalComponent } from './components/animal/animal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    StoreModule.forRoot({ visitedPages : visitMiceReducer }),
   ],
   providers: [],
   bootstrap: [AppComponent]

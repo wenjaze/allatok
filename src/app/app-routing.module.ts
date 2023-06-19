@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { VisitGuard } from './guards/visit.guard';
 
 const routes: Routes = [
 	{
@@ -11,6 +12,7 @@ const routes: Routes = [
 		path: 'cats',
 		loadChildren: () =>
 			import('./modules/cats/cats.module').then((m) => m.CatsModule),
+		canMatch: [VisitGuard],
 	},
 	{
 		path: 'mice',

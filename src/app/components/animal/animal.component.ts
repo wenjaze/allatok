@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { visitMice } from 'src/app/state/visited-pages.state';
 
 @Component({
   selector: 'app-animal',
@@ -7,4 +10,12 @@ import { Component, Input } from '@angular/core';
 })
 export class AnimalComponent {
   @Input() src!:string;
+  constructor(private router: Router, private store: Store) {
+
+  }
+  ngOnInit() {
+    if (this.router.url === "/mice") {
+      this.store.dispatch(visitMice());
+    }
+  }
 }
