@@ -19,6 +19,7 @@ const routes: Routes = [
 		loadChildren: () =>
 			import('./modules/mice/mice.module').then((m) => m.MiceModule),
 	},
+	{ path: '**', redirectTo: '/' },
 ];
 
 @NgModule({
