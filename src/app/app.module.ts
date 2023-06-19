@@ -8,12 +8,14 @@ import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { AnimalComponent } from './components/animal/animal.component';
 import { StoreModule } from '@ngrx/store';
 import { visitMiceReducer } from './state/visited-pages.state';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     MenuItemComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
