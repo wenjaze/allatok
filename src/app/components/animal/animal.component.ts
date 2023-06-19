@@ -10,12 +10,4 @@ import { visitMice } from 'src/app/state/visited-pages.state';
 })
 export class AnimalComponent {
   @Input() src!:string;
-  constructor(private router: Router, private store: Store) {
-
-  }
-  ngOnInit() {
-    if (this.router.url === "/mice") {
-      this.store.dispatch(visitMice());
-    }
-  }
 }
